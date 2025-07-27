@@ -1,0 +1,9 @@
+<library path="my_custom_controller_hardware"> <!-- _hardware tag -->
+    <class name="my_arduino_controller/MyArduinoInterface"
+           type="my_arduino_controller::MyArduinoInterface"
+           base_class_type="hardware_interface::SystemInterface">
+        <description>
+            Custom Arduino controller interface for DATRAS.
+        </description>
+    </class>
+</library> 

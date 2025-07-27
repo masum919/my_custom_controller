@@ -1,0 +1,9 @@
+<library path="my_custom_controller_controller">  <!-- _controller tag -->
+    <class name="my_custom_controller/MyCustomController"
+           type="my_custom_controller::MyCustomController"
+           base_class_type="controller_interface::ControllerInterface">
+        <description>
+            Custom controller for DATRAS. Read the paper on npj Robotics for more details.
+        </description>
+    </class>
+</library>

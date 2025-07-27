@@ -1,0 +1,23 @@
+/my_custom_controller/controller_manager:
+  ros__parameters:
+    update_rate: 10
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+#package/namspace
+
+/my_custom_controller/rpm_controller:
+  ros__parameters:
+    type: my_custom_controller/MyCustomController
+    joints:
+      - joint2
+      - joint3
+    interface_name: velocity
+    roller_radius: 0.0125
+    d: 0.025
+    theta: 30.0
+    command_interfaces:
+      - velocity
+    state_interfaces:
+      - velocity
+      - position
