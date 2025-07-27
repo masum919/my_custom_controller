@@ -4,7 +4,7 @@
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
 
-#package/namspace
+# namespace/controller name
 
 /my_custom_controller/rpm_controller:
   ros__parameters:
