@@ -236,7 +236,7 @@ After launch you will see something like this:
 
 ![Image](https://github.com/user-attachments/assets/33788928-c91a-4b22-8ae2-714f0bb1dc46)
 
-Now change `Fixed fram` to `world`. Check if you can control the rollers with Joint State Publisher GUI. Now you can save your rviz config file to a folder `rviz`.
+Now change `Fixed frame` to `world`. Check if you can control the rollers with Joint State Publisher GUI. Now you can save your rviz config file to a folder `rviz`.
 
 ---
 
@@ -397,6 +397,8 @@ Example: "15.5 0 -20.0 1\n"`
 
 `Format: "current1 current2\n"
 Example: "10.6 13.3\n"`
+
+The arduino firmware is included as `my_custom_controller_firmware.ino`.
 
 ![Image](https://github.com/user-attachments/assets/aad2eae6-374b-47be-9f24-d90b1e5f7d6d)
 
