@@ -1,6 +1,6 @@
 ## Good News, Everyone! You’re About to Write a Custom Controller For ros2_control!
 
-![Image](https://github.com/user-attachments/assets/b379642d-32bd-40e7-ba39-5806dac9df1e)
+![Image](https://github.com/user-attachments/assets/944a5167-43e6-4038-8b45-c8d599f56b53)
 
 ---
 
@@ -1053,11 +1053,8 @@ To Reactivate the controller:
                "includePath": [
                 "/opt/ros/jazzy/include/**",
                 "/usr/include/**",
-                "${workspaceFolder}/motor_controller/include",
-                "${workspaceFolder}/robot_control_system/robot_control_system/include",
                 "/opt/ros/jazzy/include/rclcpp",
                 "/opt/ros/jazzy/include/rcl_interfaces",
-                "${workspaceFolder}/ten_coil/include",
                 "/opt/ros/jazzy/include/joint_limits",
                 "/opt/ros/jazzy/include/std_msgs",
                 "/opt/ros/jazzy/include/tf2_geometry_msgs",
