@@ -1045,6 +1045,8 @@ To Reactivate the controller:
 
 ## Tips:
 
+---
+
 1. To stop header files include errors in vscode open up the folder `.vscode` inside the `<vscode>` directory. The click `c_cpp_properties.json`. Under `"includePath":` add `"/home/code/ros2_ws/src/my_custom_controller/include/**"` and save the file.
 
    ```json
