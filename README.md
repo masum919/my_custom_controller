@@ -1,6 +1,6 @@
 ## Good News, Everyone! You’re About to Write a Custom Controller For ros2_control!
 
-![Image](https://github.com/user-attachments/assets/e52748bd-0a3d-4a3c-9358-7c57133652d7)
+![Image](https://github.com/user-attachments/assets/b379642d-32bd-40e7-ba39-5806dac9df1e)
 
 ---
 
@@ -1045,7 +1045,7 @@ To Reactivate the controller:
 
 ## Tips:
 
----
+
 
 1. To stop header files include errors in vscode open up the folder `.vscode` inside the `<vscode>` directory. The click `c_cpp_properties.json`. Under `"includePath":` add `"/home/code/ros2_ws/src/my_custom_controller/include/**"` and save the file.
 
