@@ -1025,19 +1025,19 @@ Use the following command to send rpm commands to the motors:
 
 Of course later you can use a joystick/gamepad or any other method to send your rpm commands to the appropirate topic!
 
-To Deactivate the controller:
+**_To Deactivate the controller:_**
 
 `ros2 control set_controller_state rpm_controller inactive --controller-manager /my_custom_controller/controller_manager`
 
-To Unload the controller:
+**_To Unload the controller:_**
 
 `ros2 control unload_controller rpm_controller --controller-manager /my_custom_controller/controller_manager`
 
-To Reload the controller:
+**_To Reload the controller:_**
 
 `ros2 control load_controller rpm_controller --controller-manager /my_custom_controller/controller_manager`
 
-To Reactivate the controller:
+**_To Reactivate the controller:_**
 
 `ros2 control set_controller_state rpm_controller active --controller-manager /my_custom_controller/controller_manager`
 
