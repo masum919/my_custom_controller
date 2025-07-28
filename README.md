@@ -75,8 +75,8 @@ From our custom control law, the high level inputs are linear velocity (Vₜ) of
   - `pluginlib`
 ---
 
-### 1. Robot Description- The Blueprint:
-Create a robot `URDF` with `<ros2_control>` tag. This robot has two joints. We only control the state _velocity_. The state _position_ is not really used for now. Let's call this `my_custom_robot_rviz.urdf.xacro`.
+### 1. Robot Description:
+This is the robot's blueprint. Create a robot `URDF` with `<ros2_control>` tag. This robot has two joints. We only control the state _velocity_. The state _position_ is not really used for now. Let's call this `my_custom_robot_rviz.urdf.xacro`.
 
 ```xacro
 <?xml version="1.0"?>
@@ -213,7 +213,7 @@ Create a robot `URDF` with `<ros2_control>` tag. This robot has two joints. We o
 
 </robot>
 ```
-Write a simple URDF file describing the robot joints. In our case we have two rollers (revolute joints) actively controlled by two motors. The roller domensions and tilt angles do not need to match the real robot for now. This is only to define the controllable joints. Our _custom controller_ will compute the appropriate outputs from the governing equations. You need to use `<ros2_control>` tag in your URDF to describe different hardware components or the hardware setup. Notice:
+The URDF needs to describe the robot joints. In our case we have two rollers (revolute joints) actively controlled by two motors. The roller domensions and tilt angles do not need to match the real robot for now. This is only to define the controllable joints. Our _custom controller_ will compute the appropriate outputs from the governing equations. You need to use `<ros2_control>` tag in your URDF to describe different hardware components or the hardware setup. Notice:
 
 ```xml
         <hardware>
@@ -240,7 +240,7 @@ Now change `Fixed frame` to `world`. Check if you can control the rollers with J
 
 ---
 
-### 2. Write a _custom hardware interface_ - The Translator:
+### 2. Write a _custom hardware interface_:
 So, we know that `ros2_control` is a _robot_agnostic_ `'brain'` that ony understands two things:
 
 1. Commands it _sends_ to hardware
